@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin: 5%;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  margin: 5%;
+  padding: 5px;
+  border-radius: 15px;
+  width: 40%;
+  background-color: hsl(0, 0%, 100%);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container img {
+  margin: 5%;
+  height: 380px;
+  border-radius: 5%;
+  width: 90%;
+  justify-content: center;
+}
+
+.container span h1 {
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 2%;
+}
+
+.content1 {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+
+/* Preparation */
+.preparation {
+  background: hsl(333, 100%, 98%);
+  padding: 35px;
+  border-radius: 5%;
+  font-family: "Poppins", sans-serif;
+  margin: 40px 0;
+}
+.preparation h3 {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.preparation ul {
+  margin-left: 5%;
+  line-height: 2;
+}
+
+.preparation span {
+  font-weight: 700;
+  color: rgb(75, 73, 73);
+}
+
+/* Ingredients */
+.ingredients {
+  padding: 10px;
+  border-radius: 5%;
+}
+.ingredients h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 2%;
+  font-family: "Outfit", sans-serif;
+}
+
+.ingredients ul {
+  margin-left: 5%;
+  line-height: 3;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Instructions */
+.instructions {
+  padding: 10px;
+  border-radius: 5%;
+}
+.instructions h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 2%;
+  font-family: "Outfit", sans-serif;
+}
+
+.instructions ol {
+  text-align: left;
+  margin-left: 5%;
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+.instructions span {
+  font-weight: 700;
+  color: rgb(75, 73, 73);
+}
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+/* Nutrition */
+.nutrition {
+  font-family: "Poppins", sans-serif;
+}
+
+.nutrition p {
+  margin: 15px;
+}
+.nutrition h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 2%;
+  font-family: "Outfit", sans-serif;
+}
+.nutritionList {
+  display: flex;
+  justify-content: space-around;
+}
+.nutritionList ul {
+  list-style: none;
+  line-height: 2;
+  font-weight: 700;
+  color: rgb(105, 103, 103);
+}
+.nutritionList ul.list2 {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media */
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container img {
+    width: 100%;
+    height: 180px;
+    margin: 0;
+    padding: 0;
+  }
+  .content h1 {
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 5%;
+    font-size: 40px;
+    color: rgb(53, 52, 52);
+  }
+  .content1 p {
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(88, 87, 87);
+  }
+
+  .ingredients ul li {
+    line-height: 1.5;
+    margin: 17px;
+    width: 80%;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(80, 79, 79);
+  }
+  .instructions ol {
+    text-align: left;
+    margin-top: 8%;
+    margin-left: 5%;
+    color: rgb(80, 79, 79);
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+  }
+  .nutrition p {
+    font-size: 14px;
+    color: rgb(80, 79, 79);
+  }
+  .nutritionList ul{
+line-height: 3;
+  }
+}
